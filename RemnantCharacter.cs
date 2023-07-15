@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.IO;
+using System.Diagnostics;
+using System.Runtime.CompilerServices;
 
 namespace RemnantSaveManager
 {
@@ -167,8 +169,10 @@ namespace RemnantSaveManager
 
                     rx = new Regex(@"/Items/Trinkets/(BandsOfCastorAndPollux/)?[a-zA-Z0-9_]+");
                     matches = rx.Matches(inventory);
+                    //Debug.WriteLine(cd.ToString()+":");
                     foreach (Match match in matches)
                     {
+                       // Debug.WriteLine($"\tMatch: {match.Value}");
                         saveItems.Add(match.Value);
                     }
 

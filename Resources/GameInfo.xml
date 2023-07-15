@@ -408,7 +408,7 @@
     <Event name="RootDragon" altname="Singe">
       <Item>/Items/Weapons/Boss/Root_Spitfire/Weapon_Root_Spitfire</Item>
       <Item>/Items/Weapons/Boss/Root_Smolder/Weapon_Root_Smolder</Item>
-      <Item notes="Break Wings">/Items/Trinkets/CharredCirclet/Trinket_CharredCirclet</Item>
+      <Item notes="Break Wings">/Items/Trinkets/CharredCirclet</Item>
       <Item>/Player/Emotes/Emote_Beckon</Item>
     </Event>
     <Event name="RootMother">
@@ -618,7 +618,7 @@
       <Item>/Items/Traits/Trait_BarkSkin</Item>
     </Event>
     <Event name="Ward13">
-      <Item>/Items/Weapons/Basic/LongGuns/Coachgun/Weapon_Coachgun</Item>
+      <Item >/Items/Weapons/Basic/LongGuns/Coachgun/Weapon_Coachgun</Item>
       <Item>/Items/Weapons/Human/Melee/Hatchet/Weapon_Hatchet</Item>
       <Item>/Items/Armor/Cultist/Armor_Body_Cultist</Item>
       <Item>/Items/Armor/Cultist/Armor_Head_Cultist</Item>
@@ -651,58 +651,57 @@
       <Item>/Items/Armor/Sentinel/Armor_Head_Sentinel</Item>
       <Item>/Items/Armor/Sentinel/Armor_Legs_Sentinel</Item>
 
-      <Item>/Items/Mods/DragonsBreath/Mod_DragonsBreath</Item>
-      <Item>/Items/Mods/Immolate/Mod_Immolation</Item>
-      <Item>/Items/Mods/JestersTaunt/Mod_JestersTaunt</Item>
-      <Item>/Items/Mods/Rotshot/Mod_Rotshot</Item>
+      <Item>/Items/Mods/DragonsBreath</Item>
+      <Item altname="Immolation">/Items/Mods/Immolate</Item>
+      <Item>/Items/Mods/JestersTaunt</Item>
+      <Item>/Items/Mods/RotShot</Item>
 
-      <Item>/Items/Weapons/Basic/Autoshotgun/Weapon_Autoshotgun</Item>
-      <Item>/Items/Weapons/Basic/GrenadeLauncher/Weapon_ETS_Grenade_Launcher</Item>
-      <Item>/Items/Weapons/Basic/M1911/Weapon_M1911</Item>
+      <Item altname="Street Sweeper">/Items/Weapons/Basic/Autoshotgun/Weapon_Autoshotgun</Item>
+      <Item altname="Waster's Boomcannon">/Items/Weapons/Basic/GrenadeLauncher/Weapon_ETS_Grenade_Launcher</Item>
+      <Item altname="Model .45">/Items/Weapons/Basic/M1911/Weapon_M1911</Item>
       <Item>/Items/Weapons/Basic/PulseRifle/Weapon_Wasteland_PulseRifle</Item>
       <Item>/Items/Weapons/Basic/Wisteria/Weapon_Wisteria</Item>
 
-      <Item>/Items/Weapons/Boss/AdventurePickaxe/Weapon_Pickaxe</Item>
+      <Item altname="Adventurer's Pickaxe">/Items/Weapons/Boss/AdventurePickaxe/Weapon_Pickaxe</Item>
       <Item>/Items/Weapons/Boss/Aegis/Weapon_Aegis</Item>
       <Item>/Items/Weapons/Boss/Blightmaker/Weapon_Blightmaker</Item>
       <Item>/Items/Weapons/Boss/BloodTithe/Weapon_BloodTithe</Item>
-      <Item>/Items/Weapons/Boss/BombScythe/Weapon_BombScythe</Item>
+      <Item altname="Mantis Claw">/Items/Weapons/Boss/BombScythe/Weapon_BombScythe</Item>
       <Item>/Items/Weapons/Boss/Boomhammer/Weapon_Boomhammer</Item>
-      <Item>/Items/Weapons/Boss/BruteSword/Weapon_Brutesword</Item>
+      <Item altname="GoreSword">/Items/Weapons/Boss/BruteSword/Weapon_Brutesword</Item>
       <Item>/Items/Weapons/Boss/ClevelandChunkwriter/Weapon_ClevelandChunkwriter</Item>
       <Item>/Items/Weapons/Boss/Devotion/Weapon_Devotion</Item>
-      <Item>/Items/Weapons/Boss/FreezeRay/Weapon_FreezeRay</Item>
-      <Item>/Items/Weapons/Boss/M14/Weapon_M14</Item>
+      <Item altname="Zeta Ray">/Items/Weapons/Boss/FreezeRay/Weapon_FreezeRay</Item>
+      <Item altname="Battle Rifle">/Items/Weapons/Boss/M14/Weapon_M14</Item>
       <Item>/Items/Weapons/Boss/Pan_JoltRifle/Weapon_Pan_JoltRifle</Item>
-      <Item>/Items/Weapons/Boss/Sixshot/Weapon_Sixshot</Item>
+      <Item altname="Six-shooter">/Items/Weapons/Boss/Sixshot/Weapon_Sixshot</Item>
       <Item>/Items/Weapons/Boss/TheGreaser/Weapon_Greaser</Item>
       <Item>/Items/Weapons/Boss/Torben/Weapon_Torben</Item>
-      <Item>/Items/Weapons/Boss/TrogdorsSong/Weapon_Trogdor</Item>
-      <Item>/Items/Weapons/Boss/Winchester1887/Weapon_Winchester1887</Item>
+      <Item altname="Trogdor's Song">/Items/Weapons/Boss/TrogdorsSong/Weapon_Trogdor</Item>
+      <Item altname="Ashen Mangrove">/Items/Weapons/Boss/Winchester1887/Weapon_Winchester1887</Item>
 
-      <Item>/Items/Trinkets/BloodOath/Trinket_BloodOath</Item>
-      <Item>/Items/Trinkets/BOGO/Trinket_Bogo</Item>
-      <Item>/Items/Trinkets/BurdenOfTheLucidDreamer/Trinket_BurdenOfTheLucidDreamer</Item>
-      <Item>/Items/Trinkets/CharredCirclet/Trinket_CharredCirclet</Item>
-      <Item>/Items/Trinkets/CryogenBlast/Trinket_Cryogen</Item>
-      <Item>/Items/Trinkets/DisturbedTear/Trinket_DisturbedTear</Item>
-      <Item>/Items/Trinkets/FreneticShard/Trinket_FreneticShard</Item>
-      <Item>/Items/Trinkets/JadeMirror/Trinket_JadeMirror</Item>
-      <Item>/Items/Trinkets/LocketOfTheEmpress/Trinket_LocketOfTheEmpress</Item>
-      <Item>/Items/Trinkets/MartyrsOath/Trinket_MartyrsOath</Item>
-      <Item>/Items/Trinkets/OutlawsSigil/Trinket_OutlawsSigil</Item>
-      <Item>/Items/Trinkets/OxideCharm/Trinket_OxideCharm</Item>
-      <Item>/Items/Trinkets/ParryPearl/Trinket_ParryPearl</Item>
-      <Item>/Items/Trinkets/PhasicAmber/Trinket_PhasicAmber</Item>
-      <Item>/Items/Trinkets/ReconstructedBone/Trinket_ReconstructedBone</Item>
-      <Item>/Items/Trinkets/RingOfTheTraveler/Trinket_Traveler</Item>
-      <Item>/Items/Trinkets/RiposteRelic/Trinket_RiposteRelic</Item>
-      <Item>/Items/Trinkets/RoughRider/Trinket_RoughRider</Item>
-      <Item>/Items/Trinkets/SpiritConduit/Trinket_SpiritConduit</Item>
-      <Item>/Items/Trinkets/ThermalShock/Trinket_ThermalShock</Item>
-      <Item>/Items/Trinkets/TraitorsNecklet/Trinket_TraitorsNecklet</Item>
-      <Item>/Items/Trinkets/TwistedHeart/Trinket_TwistedHeart</Item>
-      <Item>/Items/Trinkets/VyxwormHeart/Trinket_VyxwormHeart</Item>
+      <Item>/Items/Trinkets/BloodOath</Item>
+      <Item altname="Bogo's Ring">/Items/Trinkets/BOGO</Item>
+      <Item>/Items/Trinkets/BurdenOfTheLucidDreamer</Item>
+      <Item>/Items/Trinkets/CryogenBlast</Item>
+      <Item>/Items/Trinkets/DisturbedTear</Item>
+      <Item>/Items/Trinkets/FreneticShard</Item>
+      <Item>/Items/Trinkets/JadeMirror</Item>
+      <Item>/Items/Trinkets/LocketOfTheEmpress</Item>
+      <Item>/Items/Trinkets/MartyrsOath</Item>
+      <Item>/Items/Trinkets/OutlawsSigil</Item>
+      <Item>/Items/Trinkets/OxideCharm</Item>
+      <Item>/Items/Trinkets/ParryPearl</Item>
+      <Item>/Items/Trinkets/PhasicAmber</Item>
+      <Item>/Items/Trinkets/ReconstructedBone</Item>
+      <Item>/Items/Trinkets/RingOfTheTraveler</Item>
+      <Item>/Items/Trinkets/RiposteRelic</Item>
+      <Item altname="Sharpshooter's Idol">/Items/Trinkets/RoughRider</Item>
+      <Item>/Items/Trinkets/SpiritConduit</Item>
+      <Item>/Items/Trinkets/ThermalShock</Item>
+      <Item>/Items/Trinkets/TraitorsNecklet</Item>
+      <Item altname="Petrified Bone">/Items/Trinkets/TwistedHeart</Item>
+      <Item>/Items/Trinkets/VyxwormHeart</Item>
     </Event>
     <Event name="Ward17">
       <Item>/Items/Weapons/Boss/Guns/LongGuns/Repulsor/Weapon_Atoll_Repulsor</Item>

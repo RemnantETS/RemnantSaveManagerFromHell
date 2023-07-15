@@ -57,18 +57,18 @@ namespace RemnantSaveManager
         {
             List<RemnantItem> missingItems = new List<RemnantItem>();
             List<RemnantItem> possibleItems = this.getPossibleItems();
-            Debug.WriteLine(charData.ToString()+" Event: " + this.Name);
+            //Debug.WriteLine(charData.ToString() + " Event: " + this.Name);
             foreach (RemnantItem item in possibleItems)
             {
-                Debug.WriteLine("\t"+item.ItemName+" : "+ charData.Inventory.Contains(item.GetKey()));
+                //Debug.WriteLine($"\tKey: {item.GetKey()} Obtained:{charData.Inventory.Contains(item.GetKey())}" );
                 if (!charData.Inventory.Contains(item.GetKey()))
                 {
-                   
                     missingItems.Add(item);
                 }
             }
             mItems = missingItems;
-
+            //Debug.WriteLine("\tInventory Items");
+            //Debug.WriteLine("\t\t" + String.Join("\n\t\t", charData.Inventory));
             if (possibleItems.Count == 0 && !GameInfo.Events.ContainsKey(this.getKey()) && !GameInfo.Challengers.ContainsKey(this.getKey()) && !this.getKey().Equals("TraitBook") && !this.getKey().Equals("Simulacrum"))
             {
                 RemnantItem ri = new RemnantItem("/UnknownPotentialLoot");
@@ -197,6 +197,7 @@ namespace RemnantSaveManager
 
                         if (zone != null && eventType != null && eventName != null)
                         {
+                            //Debug.WriteLine($"{zone} : {eventType} : {eventName}");
                             if (!zones[zone].ContainsKey(eventType))
                             {
                                 zones[zone].Add(eventType, "");
@@ -343,7 +344,7 @@ namespace RemnantSaveManager
                 }
                 orderedEvents.Add(zoneEvents["Earth"][i]);
             }
-            
+
             for (int i = 0; i < zoneEvents["Rhom"].Count; i++)
             {
                 orderedEvents.Add(zoneEvents["Rhom"][i]);
@@ -430,6 +431,7 @@ namespace RemnantSaveManager
             }
             else if (textLine.Contains("World_ETS"))
             {
+                //Debug.WriteLine("Detected Hell Item!");
                 zone = "Hell";
             }
             return zone;

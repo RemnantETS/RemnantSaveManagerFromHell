@@ -180,6 +180,7 @@ namespace RemnantSaveManager
                                 {
                                     rItem.ItemMode = RemnantItem.RemnantItemMode.Survival;
                                 }
+                                
                             }
                             if (itemNotes != null)
                             {
@@ -213,7 +214,7 @@ namespace RemnantSaveManager
             try
             {
                 WebClient client = new WebClient();
-                client.DownloadFile("https://raw.githubusercontent.com/Razzmatazzz/RemnantSaveManager/master/Resources/GameInfo.xml", "TempGameInfo.xml");
+                client.DownloadFile("https://raw.githubusercontent.com/RemnantETS/RemnantSaveManagerFromHell/master/Resources/GameInfo.xml", "TempGameInfo.xml");
 
                 XmlTextReader reader = new XmlTextReader("TempGameInfo.xml");
                 reader.WhitespaceHandling = WhitespaceHandling.None;
