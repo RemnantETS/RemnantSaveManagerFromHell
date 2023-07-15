@@ -17,8 +17,10 @@ namespace RemnantSaveManager
         public string Location { get; set; }
         public string Type { get; set; }
         public string Name { get; set; }
-        public string MissingItems {
-            get {
+        public string MissingItems
+        {
+            get
+            {
                 return string.Join("\n", mItems);
             }
         }
@@ -64,7 +66,7 @@ namespace RemnantSaveManager
             }
             mItems = missingItems;
 
-            if (possibleItems.Count == 0 && !GameInfo.Events.ContainsKey(this.getKey()) && !this.getKey().Equals("TraitBook") && !this.getKey().Equals("Simulacrum"))
+            if (possibleItems.Count == 0 && !GameInfo.Events.ContainsKey(this.getKey()) && !GameInfo.Challengers.ContainsKey(this.getKey()) && !this.getKey().Equals("TraitBook") && !this.getKey().Equals("Simulacrum"))
             {
                 RemnantItem ri = new RemnantItem("/UnknownPotentialLoot");
                 mItems.Add(ri);
@@ -109,9 +111,9 @@ namespace RemnantSaveManager
                         if (currentSublocation.Equals("TheRavager'sHaunt") || currentSublocation.Equals("TheTempestCourt")) currentSublocation = null;
                     }
                     zone = getZone(textLine);
-                    
+
                     eventType = getEventType(textLine);
-                    
+
                     if (textLine.Contains("Overworld_Zone") || textLine.Contains("_Overworld_"))
                     {
                         //process overworld zone marker
@@ -137,7 +139,7 @@ namespace RemnantSaveManager
                     {
                         //process other events, if they're recognized by getEventType
                         eventName = textLine.Split('/')[4].Split('_')[2];
-                        if (textLine.Contains("OverworldPOI"))
+                        if (textLine.Contains("OverworldPOI") || textLine.Contains("Challenger") || textLine.Contains("Challengers"))
                         {
                             currentSublocation = null;
                         }
@@ -152,12 +154,14 @@ namespace RemnantSaveManager
                                 currentSublocation = null;
                             }
                         }
+
                         if ("Chapel Station".Equals(currentMainLocation))
                         {
                             if (textLine.Contains("Quest_Boss"))
                             {
                                 currentMainLocation = "Westcourt";
-                            } else
+                            }
+                            else
                             {
                                 currentSublocation = null;
                             }
@@ -173,9 +177,15 @@ namespace RemnantSaveManager
                         if (eventName != null)
                         {
                             se.setKey(eventName);
-                            if (GameInfo.Events.ContainsKey(eventName)) {
+                            if (GameInfo.Events.ContainsKey(eventName))
+                            {
                                 se.Name = GameInfo.Events[eventName];
-                            } else
+                            }
+                            else if (GameInfo.Challengers.ContainsKey(eventName))
+                            {
+                                se.Name = GameInfo.Challengers[eventName];
+                            }
+                            else
                             {
                                 se.Name = eventName;
                             }
@@ -203,7 +213,8 @@ namespace RemnantSaveManager
                                 se.Location = string.Join(": ", locationList);
                                 se.Type = eventType;
                                 se.setMissingItems(character);
-                                if (!"Chapel Station".Equals(currentMainLocation)) {
+                                if (!"Chapel Station".Equals(currentMainLocation))
+                                {
                                     zoneEvents[zone].Add(se);
                                 }
                                 else
@@ -262,6 +273,7 @@ namespace RemnantSaveManager
             bool queenAdded = false;
             bool navunAdded = false;
             RemnantWorldEvent ward13 = new RemnantWorldEvent();
+            RemnantWorldEvent hellmod = new RemnantWorldEvent();
             RemnantWorldEvent hideout = new RemnantWorldEvent();
             RemnantWorldEvent undying = new RemnantWorldEvent();
             RemnantWorldEvent queen = new RemnantWorldEvent();
@@ -275,6 +287,13 @@ namespace RemnantSaveManager
                 ward13.Type = "Home";
                 ward13.setMissingItems(character);
                 if (ward13.MissingItems.Length > 0) orderedEvents.Add(ward13);
+
+                hellmod.setKey("HellMod");
+                hellmod.Name = "Hell Mod";
+                hellmod.Location = "Earth: Ward 13: Hell Mod";
+                hellmod.Type = "Home";
+                hellmod.setMissingItems(character);
+                if (hellmod.MissingItems.Length > 0) orderedEvents.Add(hellmod);
 
                 hideout.setKey("FoundersHideout");
                 hideout.Name = "Founder's Hideout";
@@ -419,13 +438,17 @@ namespace RemnantSaveManager
             {
                 eventType = "World Boss";
             }
-            else if (textLine.Contains("Siege")|| textLine.Contains("Quest_Church"))
+            else if (textLine.Contains("Siege") || textLine.Contains("Quest_Church"))
             {
                 eventType = "Siege";
             }
             else if (textLine.Contains("Mini"))
             {
                 eventType = "Miniboss";
+            }
+            else if (textLine.Contains("Challenger") || textLine.Contains("Challengers"))
+            {
+                eventType = "Challenger";
             }
             else if (textLine.Contains("Quest_Event"))
             {

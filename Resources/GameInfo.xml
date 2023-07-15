@@ -408,6 +408,7 @@
     <Event name="RootDragon" altname="Singe">
       <Item>/Items/Weapons/Boss/Root_Spitfire/Weapon_Root_Spitfire</Item>
       <Item>/Items/Weapons/Boss/Root_Smolder/Weapon_Root_Smolder</Item>
+      <Item notes="Break Wings">/Items/Trinkets/CharredCirclet/Trinket_CharredCirclet</Item>
       <Item>/Player/Emotes/Emote_Beckon</Item>
     </Event>
     <Event name="RootMother">
@@ -449,6 +450,7 @@
     </Event>
     <Event name="ShieldWarden" altname="ObrykTheShieldWarden">
       <Item dlc="Subject 2923">/Items/Mods/FrozenMist</Item>
+      <Item dlc="Subject 2923">/Items/Weapons/Boss/ObrykShields/Weapon_ObrykShields</Item>
     </Event>
     <Event name="Sketterling">
       <Item>/Items/Armor/Carapace/Armor_Head_Carapace</Item>
@@ -635,6 +637,73 @@
       <Item>/Items/Weapons/Basic/HandGuns/SubMachineGun/Weapon_Submachinegun</Item>
       <Item>/Items/Trinkets/RingOfTheAdmiral</Item>
     </Event>
+    <Event name="HellMod">
+      <Item>/Items/Armor/Boomer/Armor_Body_Boomer</Item>
+      <Item>/Items/Armor/Boomer/Armor_Head_Boomer</Item>
+      <Item>/Items/Armor/Boomer/Armor_Legs_Boomer</Item>
+      <Item>/Items/Armor/Rhino/Armor_Body_Rhino</Item>
+      <Item>/Items/Armor/Rhino/Armor_Head_Rhino</Item>
+      <Item>/Items/Armor/Rhino/Armor_Legs_Rhino</Item>
+      <Item>/Items/Armor/RoughRiders/Armor_Body_RoughRiders</Item>
+      <Item>/Items/Armor/RoughRiders/Armor_Head_RoughRiders</Item>
+      <Item>/Items/Armor/RoughRiders/Armor_Legs_RoughRiders</Item>
+      <Item>/Items/Armor/Sentinel/Armor_Body_Sentinel</Item>
+      <Item>/Items/Armor/Sentinel/Armor_Head_Sentinel</Item>
+      <Item>/Items/Armor/Sentinel/Armor_Legs_Sentinel</Item>
+
+      <Item>/Items/Mods/DragonsBreath/Mod_DragonsBreath</Item>
+      <Item>/Items/Mods/Immolate/Mod_Immolation</Item>
+      <Item>/Items/Mods/JestersTaunt/Mod_JestersTaunt</Item>
+      <Item>/Items/Mods/Rotshot/Mod_Rotshot</Item>
+
+      <Item>/Items/Weapons/Basic/Autoshotgun/Weapon_Autoshotgun</Item>
+      <Item>/Items/Weapons/Basic/GrenadeLauncher/Weapon_ETS_Grenade_Launcher</Item>
+      <Item>/Items/Weapons/Basic/M1911/Weapon_M1911</Item>
+      <Item>/Items/Weapons/Basic/PulseRifle/Weapon_Wasteland_PulseRifle</Item>
+      <Item>/Items/Weapons/Basic/Wisteria/Weapon_Wisteria</Item>
+
+      <Item>/Items/Weapons/Boss/AdventurePickaxe/Weapon_Pickaxe</Item>
+      <Item>/Items/Weapons/Boss/Aegis/Weapon_Aegis</Item>
+      <Item>/Items/Weapons/Boss/Blightmaker/Weapon_Blightmaker</Item>
+      <Item>/Items/Weapons/Boss/BloodTithe/Weapon_BloodTithe</Item>
+      <Item>/Items/Weapons/Boss/BombScythe/Weapon_BombScythe</Item>
+      <Item>/Items/Weapons/Boss/Boomhammer/Weapon_Boomhammer</Item>
+      <Item>/Items/Weapons/Boss/BruteSword/Weapon_Brutesword</Item>
+      <Item>/Items/Weapons/Boss/ClevelandChunkwriter/Weapon_ClevelandChunkwriter</Item>
+      <Item>/Items/Weapons/Boss/Devotion/Weapon_Devotion</Item>
+      <Item>/Items/Weapons/Boss/FreezeRay/Weapon_FreezeRay</Item>
+      <Item>/Items/Weapons/Boss/M14/Weapon_M14</Item>
+      <Item>/Items/Weapons/Boss/Pan_JoltRifle/Weapon_Pan_JoltRifle</Item>
+      <Item>/Items/Weapons/Boss/Sixshot/Weapon_Sixshot</Item>
+      <Item>/Items/Weapons/Boss/TheGreaser/Weapon_Greaser</Item>
+      <Item>/Items/Weapons/Boss/Torben/Weapon_Torben</Item>
+      <Item>/Items/Weapons/Boss/TrogdorsSong/Weapon_Trogdor</Item>
+      <Item>/Items/Weapons/Boss/Winchester1887/Weapon_Winchester1887</Item>
+
+      <Item>/Items/Trinkets/BloodOath/Trinket_BloodOath</Item>
+      <Item>/Items/Trinkets/BOGO/Trinket_Bogo</Item>
+      <Item>/Items/Trinkets/BurdenOfTheLucidDreamer/Trinket_BurdenOfTheLucidDreamer</Item>
+      <Item>/Items/Trinkets/CharredCirclet/Trinket_CharredCirclet</Item>
+      <Item>/Items/Trinkets/CryogenBlast/Trinket_Cryogen</Item>
+      <Item>/Items/Trinkets/DisturbedTear/Trinket_DisturbedTear</Item>
+      <Item>/Items/Trinkets/FreneticShard/Trinket_FreneticShard</Item>
+      <Item>/Items/Trinkets/JadeMirror/Trinket_JadeMirror</Item>
+      <Item>/Items/Trinkets/LocketOfTheEmpress/Trinket_LocketOfTheEmpress</Item>
+      <Item>/Items/Trinkets/MartyrsOath/Trinket_MartyrsOath</Item>
+      <Item>/Items/Trinkets/OutlawsSigil/Trinket_OutlawsSigil</Item>
+      <Item>/Items/Trinkets/OxideCharm/Trinket_OxideCharm</Item>
+      <Item>/Items/Trinkets/ParryPearl/Trinket_ParryPearl</Item>
+      <Item>/Items/Trinkets/PhasicAmber/Trinket_PhasicAmber</Item>
+      <Item>/Items/Trinkets/ReconstructedBone/Trinket_ReconstructedBone</Item>
+      <Item>/Items/Trinkets/RingOfTheTraveler/Trinket_Traveler</Item>
+      <Item>/Items/Trinkets/RiposteRelic/Trinket_RiposteRelic</Item>
+      <Item>/Items/Trinkets/RoughRider/Trinket_RoughRider</Item>
+      <Item>/Items/Trinkets/SpiritConduit/Trinket_SpiritConduit</Item>
+      <Item>/Items/Trinkets/ThermalShock/Trinket_ThermalShock</Item>
+      <Item>/Items/Trinkets/TraitorsNecklet/Trinket_TraitorsNecklet</Item>
+      <Item>/Items/Trinkets/TwistedHeart/Trinket_TwistedHeart</Item>
+      <Item>/Items/Trinkets/VyxwormHeart/Trinket_VyxwormHeart</Item>
+    </Event>
     <Event name="Ward17">
       <Item>/Items/Weapons/Boss/Guns/LongGuns/Repulsor/Weapon_Atoll_Repulsor</Item>
       <Item>/Items/Traits/Trait_MindsEye</Item>
@@ -682,4 +751,58 @@
       Credit to /u/hlza00 for original locaiton and event names
     -->
   </EventItems>
+  <Challengers>
+    <Challenger name="Brute" altname="Grout">
+      <Item>/Items/Resources/UpgradeResources/Resource_Special_DarkSliver</Item>
+    </Challenger>
+    <Challenger name="Dragon" altname="Bahamut">
+      <Item>/Items/Resources/UpgradeResources/Resource_Special_DarkSliver</Item>
+    </Challenger>
+    <Challenger name="Wraith" altname="Veil">
+      <Item>/Items/Resources/UpgradeResources/Resource_Special_DarkSliver</Item>
+    </Challenger>
+    <Challenger name="Annointed" altname="FractureAndFear">
+      <Item>/Items/Resources/UpgradeResources/Resource_Special_DarkSliver</Item>
+    </Challenger>
+    <Challenger name="Beehive" altname="Torment">
+      <Item>/Items/Resources/UpgradeResources/Resource_Special_DarkSliver</Item>
+    </Challenger>
+    <Challenger name="Hound" altname="Stalker">
+      <Item>/Items/Resources/UpgradeResources/Resource_Special_DarkSliver</Item>
+    </Challenger>
+    <Challenger name="CorruptedVyr">
+      <Item>/Items/Resources/UpgradeResources/Resource_Special_DarkSliver</Item>
+      <Item>/Items/Weapons/Basic/IskalGlaive/Weapon_IskalGlaive</Item>
+      <Item altname="Iskal'sEmbrace">/Items/Weapons/Boss/IQScythe/Weapon_IQScythe</Item>
+    </Challenger>
+    <Challenger name="HammerKnight" altname="Queensguard">
+      <Item>/Items/Resources/UpgradeResources/Resource_Special_DarkSliver</Item>
+      <Item altname="HammerOfTheHeadless">/Items/Weapons/Boss/SimpHammer/Weapon_SimpHammer</Item>
+      <Item altname="Iskal'sEmbrace">/Items/Weapons/Boss/IQScythe/Weapon_IQScythe</Item>
+    </Challenger>
+    <Challenger name="Horror" altname="Interloper">
+      <Item>/Items/Resources/UpgradeResources/Resource_Special_DarkSliver</Item>
+    </Challenger>
+    <Challenger name="Priest" altname="Tempest">
+      <Item>/Items/Resources/UpgradeResources/Resource_Special_DarkSliver</Item>
+    </Challenger>
+    <Challenger name="Spearman" altname="Kincaller">
+      <Item>/Items/Resources/UpgradeResources/Resource_Special_DarkSliver</Item>
+    </Challenger>
+    <Challenger name="ZephyrImmolator" altname="FyreAndFury">
+      <Item>/Items/Resources/UpgradeResources/Resource_Special_DarkSliver</Item>
+    </Challenger>
+    <Challenger name="Brutes" altname="TarlocAndGrout">
+      <Item>/Items/Resources/UpgradeResources/Resource_Special_DarkSliver</Item>
+    </Challenger>
+    <Challenger name="Ent" altname="Behemoth">
+      <Item>/Items/Resources/UpgradeResources/Resource_Special_DarkSliver</Item>
+    </Challenger>
+    <Challenger name="RatBrute" altname="Tarloc">
+      <Item>/Items/Resources/UpgradeResources/Resource_Special_DarkSliver</Item>
+    </Challenger>
+    <Challenger name="Yeti" altname="Meh'Teh">
+      <Item>/Items/Resources/UpgradeResources/Resource_Special_DarkSliver</Item>
+    </Challenger>
+  </Challengers>
 </GameInfo>

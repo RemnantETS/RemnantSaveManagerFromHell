@@ -14,6 +14,7 @@ namespace RemnantSaveManager
         public static event EventHandler<GameInfoUpdateEventArgs> GameInfoUpdate;
         private static Dictionary<string, string> zones = new Dictionary<string, string>();
         private static Dictionary<string, string> events = new Dictionary<string, string>();
+        private static Dictionary<string, string> challengers = new Dictionary<string, string>();
         private static Dictionary<string, RemnantItem[]> eventItem = new Dictionary<string, RemnantItem[]>();
         private static Dictionary<string, string> subLocations = new Dictionary<string, string>();
         private static Dictionary<string, string> mainLocations = new Dictionary<string, string>();
@@ -90,7 +91,18 @@ namespace RemnantSaveManager
                 return archetypes;
             }
         }
+        public static Dictionary<string, string> Challengers
+        {
+            get
+            {
+                if (challengers.Count == 0)
+                {
+                    RefreshGameInfo();
+                }
 
+                return challengers;
+            }
+        }
         public static void RefreshGameInfo()
         {
             zones.Clear();
@@ -99,6 +111,7 @@ namespace RemnantSaveManager
             subLocations.Clear();
             mainLocations.Clear();
             archetypes.Clear();
+            challengers.Clear();
             string eventName = null;
             string altEventName = null;
             string itemMode = null;
@@ -121,6 +134,16 @@ namespace RemnantSaveManager
                                 altEventName = eventName;
                             }
                             events.Add(eventName, altEventName);
+                        }
+                        else if (reader.Name.Equals("Challenger"))
+                        {
+                            eventName = reader.GetAttribute("name");
+                            altEventName = reader.GetAttribute("altname");
+                            if (altEventName == null)
+                            {
+                                altEventName = eventName;
+                            }
+                            challengers.Add(eventName, altEventName);
                         }
                         else if (reader.Name.Equals("Item"))
                         {
