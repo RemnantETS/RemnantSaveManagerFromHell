@@ -195,7 +195,7 @@ namespace RemnantSaveManager
                         }
                         break;
                     case XmlNodeType.EndElement:
-                        if (reader.Name.Equals("Event"))
+                        if (reader.Name.Equals("Event")|| reader.Name.Equals("Challenger"))
                         {
                             eventItem.Add(eventName, eventItems.ToArray());
                             eventName = null;

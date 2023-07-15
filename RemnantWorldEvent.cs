@@ -57,10 +57,13 @@ namespace RemnantSaveManager
         {
             List<RemnantItem> missingItems = new List<RemnantItem>();
             List<RemnantItem> possibleItems = this.getPossibleItems();
+            Debug.WriteLine(charData.ToString()+" Event: " + this.Name);
             foreach (RemnantItem item in possibleItems)
             {
+                Debug.WriteLine("\t"+item.ItemName+" : "+ charData.Inventory.Contains(item.GetKey()));
                 if (!charData.Inventory.Contains(item.GetKey()))
                 {
+                   
                     missingItems.Add(item);
                 }
             }
@@ -340,6 +343,7 @@ namespace RemnantSaveManager
                 }
                 orderedEvents.Add(zoneEvents["Earth"][i]);
             }
+            
             for (int i = 0; i < zoneEvents["Rhom"].Count; i++)
             {
                 orderedEvents.Add(zoneEvents["Rhom"][i]);
@@ -423,6 +427,10 @@ namespace RemnantSaveManager
             else if (textLine.Contains("World_Snow") || textLine.Contains("Campaign_Clementine"))
             {
                 zone = "Reisum";
+            }
+            else if (textLine.Contains("World_ETS"))
+            {
+                zone = "Hell";
             }
             return zone;
         }

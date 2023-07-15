@@ -49,10 +49,11 @@ namespace RemnantSaveManager
                     }
                     if (itemKey.Contains("/Trinkets/") || itemKey.Contains("BrabusPocketWatch")) itemType = "Trinket";
                     if (itemKey.Contains("/Mods/")) itemType = "Mod";
+                    if (itemKey.Contains("/UpgradeResources/")) itemType = "Resource";
                     if (itemKey.Contains("/Traits/")) itemType = "Trait";
                     if (itemKey.Contains("/Emotes/")) itemType = "Emote";
 
-                    itemName = itemName.Replace("Weapon_", "").Replace("Root_", "").Replace("Wasteland_", "").Replace("Swamp_", "").Replace("Pan_", "").Replace("Atoll_", "").Replace("Mod_", "").Replace("Trinket_", "").Replace("Trait_", "").Replace("Quest_", "").Replace("Emote_", "").Replace("Rural_", "").Replace("Snow_", "");
+                    itemName = itemName.Replace("Weapon_", "").Replace("Root_", "").Replace("Wasteland_", "").Replace("Swamp_", "").Replace("Resource_Special_", "").Replace("Pan_", "").Replace("Atoll_", "").Replace("Mod_", "").Replace("Trinket_", "").Replace("Trait_", "").Replace("Quest_", "").Replace("Emote_", "").Replace("Rural_", "").Replace("Snow_", "");
                     if (!itemType.Equals("Armor"))
                     {
                         itemName = Regex.Replace(itemName, "([a-z])([A-Z])", "$1 $2");
